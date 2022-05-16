@@ -1,6 +1,6 @@
-[![Brest Rolling Scopes](http://brest.rollingscopes.com/images/logo_rs_text.svg)](http://brest.rollingscopes.com/)
+  [![Brest Rolling Scopes](http://brest.rollingscopes.com/images/logo_rs_text.svg)](http://brest.rollingscopes.com/)
 #Brest Rolling Scopes School
-## Javascript Assignments  [![Build Status](https://travis-ci.org/rolling-scopes-school/js-assignments.svg?branch=master)](https://travis-ci.org/rolling-scopes-school/js-assignments)
+## Javascript Assignments  [![Build Status](https://travis-ci.org/FairFire/js-assignments.svg?branch=master)](https://travis-ci.org/FairFire/js-assignments)
 
 Yet another javascript assignments. There are a lot of interactive javascript resources for beginners, but most of them are online and do not cover the modern programming workflow. There are some excellent training resources on github (https://github.com/rmurphey/js-assessment, https://github.com/mrdavidlaing/javascript-koans, https://github.com/vasanthk/js-bits etc) but they are not exactly simulate the everyday programming process. So the motivation of this project is to show TDD process in the wild to the beginners. Assingment tests are implemented in various ways to feel a difference and gain the experience what manner is good, what is bad and what is ugly.
 
@@ -17,19 +17,19 @@ To start javascript assignments please follow the next steps:
 
 ### How to fork this repo
 * Click the **Fork** button at the top-right corner of this page and the repository will be copied to your own account.
-* Run `git clone https://github.com/<your-account>/js-assignments.git` from command line to download the repo.
+* Run `git clone https://github.com/FairFire/js-assignments.git` from command line to download the repo.
 
 ### How to setup travis-ci
 * Open [https://travis-ci.org/](https://travis-ci.org/) and sign in with your github account.
 * Activate your forked repo **js-assignments**.
-* Edit local README.md file and update all links (just replace all occurrences of `'rolling-scopes-school'` with your account name).
+* Edit local README.md file and update all links (just replace all occurrences of `FairFire'` with your account name).
 * Commit and push updated README.md to github:
 ```bash
   git add README.md
   git commit -m "Update the links"
   git push origin master
 ```
-* Open https://github.com/rolling-scopes-school/js-assignments and test the build icon. Now it will run all tests and update status once you push changes to github. Keep this icon green!
+* Open https://github.com/FairFire/js-assignments and test the build icon. Now it will run all tests and update status once you push changes to github. Keep this icon green!
 
 
 ### How to setup work environment
