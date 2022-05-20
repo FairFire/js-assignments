@@ -34,7 +34,59 @@
  *
  */
 function parseBankAccount(bankAccount) {
-    throw new Error('Not implemented');
+    let map = new Map;
+    map.set(
+        " _ " +
+        "| |" +
+        "|_|", 0);
+    map.set(
+        "   " +
+        "  |" +
+        "  |", 1);
+    map.set(
+        " _ " +
+        " _|" +
+        "|_ ", 2);
+    map.set(
+        " _ " +
+        " _|" +
+        " _|", 3);
+    map.set(
+        "   " +
+        "|_|" +
+        "  |", 4);
+    map.set(
+        " _ " +
+        "|_ " +
+        " _|", 5);
+    map.set(
+        " _ " +
+        "|_ " +
+        "|_|", 6);
+    map.set(
+        " _ " +
+        "  |" +
+        "  |", 7);
+    map.set(
+        " _ " +
+        "|_|" +
+        "|_|", 8);
+    map.set(
+        " _ " +
+        "|_|" +
+        " _|", 9);
+
+    let lines = bankAccount.split("\n");
+    let i = 0, result = "";
+
+    while (i < lines[0].length) {
+        let s = lines[0].substr(i, 3) + lines[1].substr(i, 3) + lines[2].substr(i, 3);
+        result += map.get(s);
+
+        i += 3;
+    }
+
+    return Number(result);
 }
 
 
@@ -63,7 +115,17 @@ function parseBankAccount(bankAccount) {
  *                                                                                                'characters.'
  */
 function* wrapText(text, columns) {
-    throw new Error('Not implemented');
+    while (text.length) {
+        let i = columns;
+
+        if (text.length > i) {
+            while (text[i] != " ")
+                i--;
+        }
+
+        yield text.substr(0, i);
+        text = text.substr(i + 1);
+    }
 }
 
 
